@@ -6,21 +6,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="Template Mo">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
 
     <title>Dream Merchants</title>
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"> 
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="assets/css/templatemo-art-factory.css">
     <link rel="stylesheet" type="text/css" href="assets/css/owl-carousel.css">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3bdab66cdb.js" crossorigin="anonymous"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
-    </head>
+    <script src="/less.js-master/dist/less.min.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="member.js" type="text.javascript"></script>
+
+    </head> 
     
     <body>
     
@@ -50,7 +54,7 @@
                             <li class="scroll-to-section"><a href="#welcome" class="active">Home</a></li>
                             <li class="scroll-to-section"><a href="#about">About</a></li>
                             <li class="scroll-to-section"><a href="#about2">Our Domains</a></li>
-                            <li class="scroll-to-section"><a href="#services">Blogs</a></li>
+                            <li class="scroll-to-section"><a href="#services">Events</a></li>
                             <li class="scroll-to-section"><a href="#frequently-question">team</a></li>
                             
                             <li class="scroll-to-section"><a href="#contact1">Contact Us</a></li>
@@ -121,11 +125,11 @@
                     <div class="left-text col-lg-6 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
                         <div id="main-name">  <h1>Welcome to <strong>DREAM MERCHANTS VIT</strong></h1> </div>
                         <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
-                        <h1 id="nerdh1">Dream Merchants is <br>a place where <br> 
+                        <h1 id="nerdh1">A place where <br> 
                           <span
                              class="txt-rotate"
                              data-period="2000"
-                             data-rotate='[ "dreams sells", "merchants excels"]'></span>
+                             data-rotate='[ "Dreams Sell.", "Merchants Excels."]'></span>
                         </h1>
                       
                      
@@ -549,361 +553,482 @@ window.onload = function() {
                         </div>
                     </div>
                     <!-- cards -->
-                    <style>
-                        /*  Team Starts */
-                        .team-members {
-                            transform: rotate(-45deg);
-                        }
-                        .team-members li > div {
-                            float: left;
-                            width: 20%;
-                        }
-                        
-                        .team-members li:nth-child(2) > div:first-child {
-                            margin-left: 20%;
-                        }
-                        
-                        .team-members li:last-child > div:first-child {
-                            margin-left: 40%;
-                        }
-                        
-                        .member-details > div {
-                            background-color: #ddd;
-                            margin: 5px;
-                        }
-                        .member-details img {
-                            transform: rotate(45deg) translate(0, 15px) scale(1.2);
-                            display: block;
-                            width: 100%;
-                            height: 100%;
-                        }
-                        
-                        /* hover content - style */
-                        .member-details > div {
-                            position: relative;
-                            overflow: hidden;
-                        }
-                        
-                        .member-info {
-                            position: absolute;
-                            top: 50%;
-                            transform: rotate(45deg) translate(-12px, 15px);
-                            left: 0;
-                            right: 0;
-                            z-index: 2;
-                            text-align: center;
-                        }
-                        
-                        .member-info h3,
-                        .member-info p {
-                            margin: 0;
-                            color: #fff;
-                            position: relative;
-                            opacity: 0;
-                            visibility: hidden;
-                        }
-                        
-                        .member-info h3 {
-                            text-transform: uppercase;
-                            font-size: 14px;
-                            font-weight: 400;
-                            top: -100px;
-                        }
-                        
-                        .member-info p {
-                            font-weight: 300;
-                            font-size: 12px;
-                            bottom: -150px;
-                        }
-                        
-                        .member-details > div:after {
-                            content: '';
-                            background-image: linear-gradient(45deg, rgba(228, 82, 69, .8) 50%, transparent 50%);
-                            position: absolute;
-                            top: 0;
-                            bottom: 0;
-                            left: 0;
-                            right: 0;
-                            z-index: 1;
-                            opacity: 0;
-                            visibility: hidden;
-                        }
-                        
-                        /* hover content - onhover */
-                        .member-details *,
-                        .member-details > div:after {
-                            cursor: pointer;
-                            transition: all .4s ease;
-                        }
-                        
-                        .member-details:hover *,
-                        .member-details:hover > div:after {
-                            opacity: 1;
-                            visibility: visible;
-                        }
-                        
-                        .member-details:hover .member-info h3 {
-                            top: 0;
-                        }
-                        
-                        .member-details:hover .member-info p {
-                            bottom: 0;
-                        }
-                        
-                        /* Team overview */
-                        .team-overview {
-                            padding-right: 15px;
-                        }
-                        .team-overview h2 {
-                            text-transform: uppercase;
-                            font-size: 22px;
-                            font-weight: 700;
-                            margin-bottom: 5px;
-                        }
-                        
-                        .team-overview > a {
-                            margin-bottom: 30px;
-                            display: block;
-                        }
-                        
-                        .team-overview > a:before {
-                            content: '';
-                            width: 10px;
-                            height: 2px;
-                            position: relative;
-                            top: -3px;
-                            margin-right: 5px;
-                            background-color: #ccc;
-                            display: inline-block;
-                        }
-                        
-                        
-                        /* For centering elements - optional - Can use table,tablecell instead */
-                        .flex-center {
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: center;
-                            align-items: center;
-                            margin-bottom: 140px;
-                            margin-top: 0px;
-                        }
-                        
-                        .flex-center > div:first-child {
-                            order: 2;
-                        }
-                        
-                        /* RESPONSIVE */
-                        @media only screen and (max-width : 992px) {
-                            .sm-no-flex {
-                                display: block;
-                            }
-                            .sm-no-float {
-                                float: none !important;
-                            }
-                            .sm-text-center {
-                                text-align: center;
-                            }
-                        }
-                        
-                        @media only screen and (max-width : 550px) {
-                            .team-members li {
-                                text-align: center;
-                            }
-                            .team-members li > div {
-                                float: none;
-                                display: inline-block;
-                                width: 30%;
-                                margin: 0 !important;
-                            }
-                            .team-members {
-                                transform: rotate(0);
-                            }
-                            .member-details img {
-                                transform: rotate(0) translate(0, 0);
-                            }
-                            .team-overview {
-                                padding: 15px;
-                            }
-                            
-                        }
-                        
-                        @media only screen and (max-width : 399px) {
-                            .team-members li > div {
-                                width: 48%;
-                            }
-                        }
-                        
-             
-                            </style>
-                        
-                        <style>
-                            #small-name{
-                                font-size: 10px !important;
-                                text-align: center !important;
-                            }
-                            .big-name{
-                                margin-left: 0% !important;
-                                margin-right: 0% !important;
-                                font-size: 8px !important;
-                            }
-                        </style>
+<section class="container">
+    <div class="row active-with-click">
+        <div class="col-md-6 col-sm-6 col-xs-12">
+           <div class="coordinator"> <article class="material-card Red">
+                <h2>
+                    <span>Dr. Sudipto Sir</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star"></i>
+                        Faculty Coordinator
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container">
+                        <img class="img-responsive" src="/assets/images/ridita.gif">
+                    </div>
+                    <div class="mc-description">
+                        He has appeared in more than 100 films and television shows, including The Deer Hunter, Annie Hall, The Prophecy trilogy, The Dogs of War ...
+                    </div>
+                </div>
+                <a class="mc-btn-action">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="mc-footer">
+                    <h4>
+                        Social
+                    </h4>
+                    <a class="fa fa-fw fa-facebook"></a>
+                    <a class="fa fa-fw fa-twitter"></a>
+                    <a class="fa fa-fw fa-linkedin"></a>
+                    <a class="fa fa-fw fa-google-plus"></a>
+                </div>
+            </article>
+        </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="coordinator"><article class="material-card Pink">
+                <h2>
+                    <span>Rajyalakshmi Ma'am</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star"></i>
+                        Faculty Coordinator
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container">
+                        <img class="img-responsive" src="/assets/images/nidish.gif">
+                    </div>
+                    <div class="mc-description">
+                        He has won two Academy Awards, for his roles in the mystery drama Mystic River (2003) and the biopic Milk (2008). Penn began his acting career in television with a brief appearance in a 1974 episode of Little House on the Prairie ...
+                    </div>
+                </div>
+                <a class="mc-btn-action">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="mc-footer">
+                    <h4>
+                        Social
+                    </h4>
+                    <a class="fa fa-fw fa-facebook"></a>
+                    <a class="fa fa-fw fa-twitter"></a>
+                    <a class="fa fa-fw fa-linkedin"></a>
+                    <a class="fa fa-fw fa-google-plus"></a>
+                </div>
+            </article>
+        </div>
+    </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <article class="material-card Red">
+                <h2>
+                    <span>Aditya Ajit Pillai</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star"></i>
+                       Board Representative
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container">
+                        <img class="img-responsive" src="/assets/images/aditya-bhaiya.gif">
+                    </div>
+                    <div class="mc-description">
+                        He has appeared in more than 100 films and television shows, including The Deer Hunter, Annie Hall, The Prophecy trilogy, The Dogs of War ...
+                    </div>
+                </div>
+                <a class="mc-btn-action">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="mc-footer">
+                    <h4>
+                        Social
+                    </h4>
+                    <a class="fa fa-fw fa-facebook"></a>
+                    <a class="fa fa-fw fa-twitter"></a>
+                    <a class="fa fa-fw fa-linkedin"></a>
+                    <a class="fa fa-fw fa-google-plus"></a>
+                </div>
+            </article>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <article class="material-card Pink">
+                <h2>
+                    <span>Ananya Thaniyil</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star"></i>
+                        Board Representative
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container">
+                        <img class="img-responsive" src="/assets/images/ananya.gif">
+                    </div>
+                    <div class="mc-description">
+                        He has won two Academy Awards, for his roles in the mystery drama Mystic River (2003) and the biopic Milk (2008). Penn began his acting career in television with a brief appearance in a 1974 episode of Little House on the Prairie ...
+                    </div>
+                </div>
+                <a class="mc-btn-action">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="mc-footer">
+                    <h4>
+                        Social
+                    </h4>
+                    <a class="fa fa-fw fa-facebook"></a>
+                    <a class="fa fa-fw fa-twitter"></a>
+                    <a class="fa fa-fw fa-linkedin"></a>
+                    <a class="fa fa-fw fa-google-plus"></a>
+                </div>
+            </article>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <article class="material-card Purple">
+                <h2>
+                    <span>Moushik Misra</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star"></i>
+                        Editorial Head
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container">
+                        <img class="img-responsive" src="/assets/images/moushik.gif">
+                    </div>
+                    <div class="mc-description">
+                        He rose to international fame with his role as the Man with No Name in Sergio Leone's Dollars trilogy of spaghetti Westerns during the 1960s ...
+                    </div>
+                </div>
+                <a class="mc-btn-action">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="mc-footer">
+                    <h4>
+                        Social
+                    </h4>
+                    <a class="fa fa-fw fa-facebook"></a>
+                    <a class="fa fa-fw fa-twitter"></a>
+                    <a class="fa fa-fw fa-linkedin"></a>
+                    <a class="fa fa-fw fa-google-plus"></a>
+                </div>
+            </article>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <article class="material-card Deep-Purple">
+                <h2>
+                    <span>Shreya Vemuluri</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star"></i>
+                        Editorial Head
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container">
+                        <img class="img-responsive" src="/assets/images/shreya.gif">
+                    </div>
+                    <div class="mc-description">
+                        He has been known for his versatile portrayals of antiheroes and vulnerable characters.[3] He won the Academy Award for Kramer vs. Kramer in 1979 ...
+                    </div>
+                </div>
+                <a class="mc-btn-action">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="mc-footer">
+                    <h4>
+                        Social
+                    </h4>
+                    <a class="fa fa-fw fa-facebook"></a>
+                    <a class="fa fa-fw fa-twitter"></a>
+                    <a class="fa fa-fw fa-linkedin"></a>
+                    <a class="fa fa-fw fa-google-plus"></a>
+                </div>
+            </article>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <article class="material-card Indigo">
+                <h2>
+                    <span>Alan George</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star"></i>
+                       Social Media Head
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container">
+                        <img class="img-responsive" src="/assets/images/alan.gif">
+                    </div>
+                    <div class="mc-description">
+                        He has been nominated for three Academy Awards for his work in the films Primal Fear, American History X and Birdman. He also starred in other roles ...
+                    </div>
+                </div>
+                <a class="mc-btn-action">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="mc-footer">
+                    <h4>
+                        Social
+                    </h4>
+                    <a class="fa fa-fw fa-facebook"></a>
+                    <a class="fa fa-fw fa-twitter"></a>
+                    <a class="fa fa-fw fa-linkedin"></a>
+                    <a class="fa fa-fw fa-google-plus"></a>
+                </div>
+            </article>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <article class="material-card Blue">
+                <h2>
+                    <span>Chaitanya Gupta</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star"></i>
+                        Promotions & Marketing Lead
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container">
+                        <img class="img-responsive" src="assets/images/chaitanya.gif">
+                    </div>
+                    <div class="mc-description">
+                        English actor and author. Renowned for his distinctive working class cockney accent, Caine has appeared in over 115 films and is regarded as a British ...
+                    </div>
+                </div>
+                <a class="mc-btn-action">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="mc-footer">
+                    <h4>
+                        Social
+                    </h4>
+                    <a class="fa fa-fw fa-facebook"></a>
+                    <a class="fa fa-fw fa-twitter"></a>
+                    <a class="fa fa-fw fa-linkedin"></a>
+                    <a class="fa fa-fw fa-google-plus"></a>
+                </div>
+            </article>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <article class="material-card Light-Blue">
+                <h2>
+                    <span>Rahul Jindal</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star"></i>
+                        Finance & Outread Head
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container">
+                        <img class="img-responsive" src="/assets/images/rahul.gif">
+                    </div>
+                    <div class="mc-description">
+                        Some of his most notable starring roles were in Martin Scorsese's Mean Streets and Taxi Driver, Ridley Scott's The Duellists and Thelma & Louise, Quentin Tarantino ...
+                    </div>
+                </div>
+                <a class="mc-btn-action">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="mc-footer">
+                    <h4>
+                        Social
+                    </h4>
+                    <a class="fa fa-fw fa-facebook"></a>
+                    <a class="fa fa-fw fa-twitter"></a>
+                    <a class="fa fa-fw fa-linkedin"></a>
+                    <a class="fa fa-fw fa-google-plus"></a>
+                </div>
+            </article>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <article class="material-card Cyan">
+                <h2>
+                    <span>Ishaan Kulkarni</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star"></i>
+                        Event Management
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container">
+                        <img class="img-responsive" src="assets/images/ishaan.gif">
+                    </div>
+                    <div class="mc-description">
+                        Throughout his career, Nicholson has portrayed unique and challenging roles, many of which include dark portrayals of excitable, neurotic and psychopathic characters ...
+                    </div>
+                </div>
+                <a class="mc-btn-action">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="mc-footer">
+                    <h4>
+                        Social
+                    </h4>
+                    <a class="fa fa-fw fa-facebook"></a>
+                    <a class="fa fa-fw fa-twitter"></a>
+                    <a class="fa fa-fw fa-linkedin"></a>
+                    <a class="fa fa-fw fa-google-plus"></a>
+                </div>
+            </article>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <article class="material-card Teal">
+                <h2>
+                    <span>Suraj K Bharti</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star"></i>
+                        Event Management Head
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container">
+                        <img class="img-responsive" src="/assets/images/suraj.gif">
+                    </div>
+                    <div class="mc-description">
+                        He comes from a well-known acting family and began his televised acting in 1958 as a child with his father, Lloyd Bridges, and brother, Beau, on television's Sea Hunt ...
+                    </div>
+                </div>
+                <a class="mc-btn-action">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="mc-footer">
+                    <h4>
+                        Social
+                    </h4>
+                    <a class="fa fa-fw fa-facebook"></a>
+                    <a class="fa fa-fw fa-twitter"></a>
+                    <a class="fa fa-fw fa-linkedin"></a>
+                    <a class="fa fa-fw fa-google-plus"></a>
+                </div>
+            </article>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <article class="material-card Green">
+                <h2>
+                    <span>Abhirup Ghosh</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star"></i>
+                        Design Lead
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container">
+                        <img class="img-responsive" src="assets/images/bhaiya.gif">
+                    </div>
+                    <div class="mc-description">
+                        He is known for his roles in Big (1988), Philadelphia (1993), Forrest Gump (1994), Apollo 13 (1995), Saving Private Ryan, You've Got Mail (both 1998), The Green Mile (1999), Cast Away (2000) ...
+                    </div>
+                </div>
+                <a class="mc-btn-action">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="mc-footer">
+                    <h4>
+                        Social
+                    </h4>
+                    <a class="fa fa-fw fa-facebook"></a>
+                    <a class="fa fa-fw fa-twitter"></a>
+                    <a class="fa fa-fw fa-linkedin"></a>
+                    <a class="fa fa-fw fa-google-plus"></a>
+                </div>
+            </article>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <article class="material-card Light-Green">
+                <h2>
+                    <span>Ridita Garg</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star"></i>
+                        Core Lead
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container">
+                        <img class="img-responsive" src="assets/images/ridita.gif">
+                    </div>
+                    <div class="mc-description">
+                        He is known for his roles in Big (1988), Philadelphia (1993), Forrest Gump (1994), Apollo 13 (1995), Saving Private Ryan, You've Got Mail (both 1998), The Green Mile (1999), Cast Away (2000) ...
+                    </div>
+                </div>
+                <a class="mc-btn-action">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="mc-footer">
+                    <h4>
+                        Social
+                    </h4>
+                    <a class="fa fa-fw fa-facebook"></a>
+                    <a class="fa fa-fw fa-twitter"></a>
+                    <a class="fa fa-fw fa-linkedin"></a>
+                    <a class="fa fa-fw fa-google-plus"></a>
+                </div>
+            </article>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <article class="material-card Lime">
+                <h2>
+                    <span>Nidish Anand</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star"></i>
+                        Core Lead
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container">
+                        <img class="img-responsive" src="assets/images/nidish.gif">
+                    </div>
+                    <div class="mc-description">
+                        Best known for his distinctive supporting and character roles – typically lowlifes, bullies, and misfits – Hoffman was a regular presence in films from the early 1990s until his death at age 46.
+                    </div>
+                </div>
+                <a class="mc-btn-action">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="mc-footer">
+                    <h4>
+                        Social
+                    </h4>
+                    <a class="fa fa-fw fa-facebook"></a>
+                    <a class="fa fa-fw fa-twitter"></a>
+                    <a class="fa fa-fw fa-linkedin"></a>
+                    <a class="fa fa-fw fa-google-plus"></a>
+                </div>
+            </article>
+        </div>
 
-                        <section>
-                            <div class="container">
-                                <div class="row flex-center sm-no-flex">
-                        
-                                    <div class="pull-right sm-no-float col-md-8">
-                                        <ul class="team-members">
-                                            <!-- single member row starts -->
-                                            <li class="clearfix">
-                                                <div class="member-details">
-                                                    <div>
-                                                        <img src="./assets/images/ridita.gif" alt="UI Designer">
-                                                        <div class="member-info">
-                                                            <h3>Ridita Gard</h3>
-                                                            <p>Core Lead</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                
-                                                <div class="member-details">
-                                                    <div>
-                                                        <img src="./assets/images/nidish.gif" alt="UI Designer">
-                                                        <div class="member-info">
-                                                            <h3>Nidish Anand</h3>
-                                                            <p>Core Lead</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                
-                                                <div class="member-details">
-                                                    <div>
-                                                        <img src="./assets/images/shreya.gif" alt="UI Designer">
-                                                        <div class="member-info">
-                                                            <h3>Shreya Vemuluri</h3>
-                                                            <p>Editorial Head</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li><!-- /single member row ends -->
-                                            
-                                            <!-- single member row starts -->
-                                            <li class="clearfix">
-                                                <div class="member-details">
-                                                    <div>
-                                                        <img src="./assets/images/ishaan.gif" alt="UI Designer">
-                                                        <div class="member-info">
-                                                            <h3>Ishaan Kulkarni</h3>
-                                                            <p id='small-name'>Event Management<br>Head</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                
-                                                <div class="member-details">
-                                                    <div>
-                                                        <img src="./assets/images/suraj.gif" alt="UI Designer">
-                                                        <div class="member-info">
-                                                            <h3>Suraj K Bharti</h3>
-                                                            <p id='small-name'>Event Management<br>Head</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                
-                                                <div class="member-details">
-                                                    <div>
-                                                        <img src="./assets/images/bhaiya.gif" alt="UI Designer">
-                                                        <div class="member-info">
-                                                            <h3>Abhirup Ghosh</h3>
-                                                            <p>Design Head</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li><!-- /single member row ends -->
-                        
-                                            <!-- single member row starts -->
-                                            <li class="clearfix">
-                                                <div class="member-details">
-                                                    <div>
-                                                        <img src="./assets/images/rahul.gif" alt="UI Designer">
-                                                        <div class="member-info">
-                                                            <h3>Rahul Jindal</h3>
-                                                            <p id='small-name'>Finance & Outreach<br>Head</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                
-                                                <div class="member-details">
-                                                    <div>
-                                                        <img src="./assets/images/moushik.gif" alt="UI Designer">
-                                                        <div class="member-info">
-                                                            <h3>Moukhik Misra</h3>
-                                                            <p>Manager</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                
-                                                <div class="member-details">
-                                                    <div>
-                                                        <img src="./assets/images/chaitanya.gif" alt="UI Designer">
-                                                        <div class="member-info">
-                                                            <h3>Chaitanya Gupta</h3>
-                                                            <p id='small-name' class="big-name">Promotions & Marketing<br>Head</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li><!-- /single member row ends -->
-                    
-                                            <li class="clearfix">
-                                                <div class="member-details">
-                                                    <div>
-                                                        <img src="./assets/images/alan.gif" alt="UI Designer">
-                                                        <div class="member-info">
-                                                            <h3>Alan George</h3>
-                                                            <p id='small-name'>Social Media Head</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                
-                                                <div class="member-details">
-                                                    <div>
-                                                        <img src="./assets/images/aditya-bhaiya.gif" alt="UI Designer">
-                                                        <div class="member-info">
-                                                            <h3>Aditya Ajit Pillai</h3>
-                                                            <p id='small-name'>Board Representative</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                
-                                                <div class="member-details">
-                                                    <div>
-                                                        <img src="./assets/images/ananya.gif" alt="UI Designer">
-                                                        <div class="member-info">
-                                                            <h3>Ananya Thaniyil</h3>
-                                                            <p id='small-name'>Board Representative</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li><!-- /single member row ends -->
-                        
-                                        </ul><!-- /end team-photos -->
-                                    </div><!-- /end col-md-8 -->
-                                    
-                                    <div class="pull-left col-md-4 sm-text-center">
-                                        <div class="team-overview">
-                                            <h2>Who Are We?</h2>
-                                            <a href="#">Meet the Entire Team</a>
-                                            <p><div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci quae nesciunt <br>officia! Autem, nam eum voluptatem,<br> esse voluptatibus deleniti tempora laboriosam <br>
-                                                sequi pariatur, explicabo itaque. Fuga, deserunt? Repudiandae, neque qui.</div></p>
-                                        </div>
-                                    </div><!-- /end col-md-4 -->
-                                </div><!-- /end row -->
-                            </div><!-- /end container -->
-                        </section>
-                <!-- /cards -->
-            </section>
+    </div>
+</section>
+<script>
+    $(function() {
+        $('.material-card > .mc-btn-action').click(function () {
+            var card = $(this).parent('.material-card');
+            var icon = $(this).children('i');
+            icon.addClass('fa-spin-fast');
+
+            if (card.hasClass('mc-active')) {
+                card.removeClass('mc-active');
+
+                window.setTimeout(function() {
+                    icon
+                        .removeClass('fa-arrow-left')
+                        .removeClass('fa-spin-fast')
+                        .addClass('fa-bars');
+
+                }, 800);
+            } else {
+                card.addClass('mc-active');
+
+                window.setTimeout(function() {
+                    icon
+                        .removeClass('fa-bars')
+                        .removeClass('fa-spin-fast')
+                        .addClass('fa-arrow-left');
+
+                }, 800);
+            }
+        });
+    });
+</script>
+
     <!-- ***** Frequently Question End ***** -->
 <!-- ***** Section Title Start ***** -->
-<div class="row" id="contact1">
+<!-- <div class="row" id="contact1">
     <div class="col-lg-12">
         <div class="section-heading">
             <h2>Our Contact Details</h2>
@@ -914,23 +1039,23 @@ window.onload = function() {
             <p>You can refer to the map and contact form.</p>
         </div>
     </div>
-</div>
+</div> -->
 <!-- ***** Section Title End ***** -->
 
     <!-- ***** Contact Us Start ***** -->
-    <section class="section" id="contact-us">
+    <!-- <section class="section" id="contact-us">
         <div class="container-fluid">
-            <div class="row">
+            <div class="row"> -->
                 <!-- ***** Contact Map Start ***** -->
-                <div class="col-lg-6 col-md-6 col-sm-12">
+                <!-- <div class="col-lg-6 col-md-6 col-sm-12">
                     <div id="map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.001696423076!2d79.15722781464517!3d12.971742990855734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad479f0ccbe067%3A0xfef222e5f36ecdeb!2sVellore%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1614144191505!5m2!1sen!2sin" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
-                </div>
+                </div> -->
                 <!-- ***** Contact Map End ***** -->
 
                 <!-- ***** Contact Form Start ***** -->
-                <div class="col-lg-6 col-md-6 col-sm-12">
+                <!-- <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="contact-form">
                         <form id="contact" action="" method="post">
                           <div class="row">
@@ -957,11 +1082,11 @@ window.onload = function() {
                           </div>
                         </form>
                     </div>
-                </div>
+                </div> -->
                 <!-- ***** Contact Form End ***** -->
-            </div>
+            <!-- </div>
         </div>
-    </section>
+    </section> -->
     <!-- ***** Contact Us End ***** -->
 
   
@@ -971,7 +1096,8 @@ window.onload = function() {
     <style>
         .new_footer_area {
     background: #fbfbfd;
-    margin-bottom: -300px 
+    margin-bottom: -300px;
+    margin-top: -100px;
 }
 
 
@@ -1150,7 +1276,13 @@ h1, h2, h3, h4, h5, h6 {
             </div>
         </div>
     </footer>
-
+<style>
+    #map2{
+        overflow: hidden;
+        width: 100%;
+        height: 220px;
+    }
+</style>
 <footer class="new_footer_area bg_color" id="pc-version">
     <div class="new_footer_top">
         <div class="container">
@@ -1169,27 +1301,20 @@ h1, h2, h3, h4, h5, h6 {
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
-                        <h3 class="f-title f_600 t_color f_size_18">Download</h3>
-                        <ul class="list-unstyled f_list">
-                            <li><a href="#">Company</a></li>
-                            <li><a href="#">Android App</a></li>
-                            <li><a href="#">ios App</a></li>
-                            <li><a href="#">Desktop</a></li>
-                            <li><a href="#">Projects</a></li>
-                            <li><a href="#">My tasks</a></li>
-                        </ul>
+                        <h3 class="f-title f_600 t_color f_size_18">Location</h3>
+                        <div id="map2">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.001696423076!2d79.15722781464517!3d12.971742990855734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad479f0ccbe067%3A0xfef222e5f36ecdeb!2sVellore%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1614144191505!5m2!1sen!2sin" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
                         <h3 class="f-title f_600 t_color f_size_18">Help</h3>
                         <ul class="list-unstyled f_list">
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">Term &amp; conditions</a></li>
-                            <li><a href="#">Reporting</a></li>
-                            <li><a href="#">Documentation</a></li>
-                            <li><a href="#">Support Policy</a></li>
-                            <li><a href="#">Privacy</a></li>
+                            <li>Aditya Ajit Pillai</li>
+                            <li><a href="tel:915-046-6552">9150466552</a></li>
+                            <li>Abhirup</li>
+                            <li><a href="tel:123-456-7890">123-456-7890</a></li>
                         </ul>
                     </div>
                 </div>
@@ -1224,7 +1349,7 @@ h1, h2, h3, h4, h5, h6 {
                 </div>
             </div>
         </div>
-    </div>
+    </div>  
 </footer>
 
     <!-- jQuery -->
