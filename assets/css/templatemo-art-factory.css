@@ -206,7 +206,7 @@ a.main-button {
   font-size: 13px;
   border-radius: 20px;
   padding: 12px 20px;
-  background-color: #00b4c6;
+  background-color: #2C3DC5;
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.25px;
@@ -879,7 +879,7 @@ services
 #services {
   position: relative;
   padding: 120px 0px 90px 0px;
-  background: rgba(0, 136, 232, 1);
+  background: #2C3DC5;
   background: -moz-linear-gradient(
     -45deg,
     rgba(0, 136, 232, 1) 0%,
@@ -893,30 +893,7 @@ services
     color-stop(0%, rgba(0, 182, 198, 1)),
     color-stop(100%, rgba(0, 136, 232, 1))
   );
-  background: -webkit-linear-gradient(
-    -45deg,
-    rgba(0, 136, 232, 1) 0%,
-    rgba(0, 182, 198, 1) 0%,
-    rgba(0, 136, 232, 1) 100%
-  );
-  background: -o-linear-gradient(
-    -45deg,
-    rgba(0, 136, 232, 1) 0%,
-    rgba(0, 182, 198, 1) 0%,
-    rgba(0, 136, 232, 1) 100%
-  );
-  background: -ms-linear-gradient(
-    -45deg,
-    rgba(0, 136, 232, 1) 0%,
-    rgba(0, 182, 198, 1) 0%,
-    rgba(0, 136, 232, 1) 100%
-  );
-  background: linear-gradient(
-    135deg,
-    rgba(0, 136, 232, 1) 0%,
-    rgba(0, 182, 198, 1) 0%,
-    rgba(0, 136, 232, 1) 100%
-  );
+  
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0088e8', endColorstr='#0088e8', GradientType=1 );
 }
 
@@ -957,7 +934,7 @@ services
   margin: auto;
   position: relative;
   margin-bottom: 30px;
-  background: #00b4c6;
+  background: #2C3DC5;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -1306,7 +1283,7 @@ footer .social li {
 footer .social li a {
   color: #fff;
   text-align: center;
-  background-color: #00b4c6;
+  background-color: #2C3DC5;
   width: 40px;
   height: 40px;
   line-height: 40px;
@@ -1350,7 +1327,7 @@ preloader
 */
 #preloader {
   overflow: hidden;
-  background-image: linear-gradient(145deg, #00b4c6 0%, #0088e8 100%);
+  background-image: linear-gradient(145deg, #6D7DFC 0%, #2C3DC5 100%);
   left: 0;
   right: 0;
   top: 0;
