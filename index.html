@@ -542,9 +542,14 @@ window.onload = function() {
         #blog-heading{
             margin-top: 30px;
             margin-bottom: 30px;
-            font-family: "Roboto", sans-serif;
-            font-weight: bold;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 350;
+            font-size: 3.5em;
             color: black;
+
+        }
+        #blogs{
+            margin-bottom: -60px;
         }
     </style>
            
@@ -553,7 +558,7 @@ window.onload = function() {
           <h2 class="text-center" id="blog-heading">Blogs</h2>
                 <div id="medium-widget"></div>
     <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
-    <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@dreammerchantsvit","postsPerLine":3,"limit":3,"picture":"big","fields":["description","author","claps","publishAt"],"ratio":"landscape"}})</script>
+    <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/mozilla-firefox-club","postsPerLine":3,"limit":3,"picture":"big","fields":["description","author","claps","publishAt"],"ratio":"landscape"}})</script>
 
         
     </div>
@@ -576,9 +581,14 @@ window.onload = function() {
                         </div>
                     </div>
                     <!-- cards -->
+                    <style>
+                        #row1{
+                            margin-left: 14% !important;
+                        }
+                    </style>
 <section class="container">
-    <div class="row active-with-click">
-        <div class="col-md-6 col-sm-6 col-xs-12">
+    <div class="row active-with-click" id="row1">
+        <div class="col-md-5 col-sm-6 col-xs-12">
            <div class="coordinator"> <article class="material-card Red">
                 <h2>
                     <span>Dr. Sudipto Sir</span>
@@ -589,28 +599,12 @@ window.onload = function() {
                 </h2>
                 <div class="mc-content">
                     <div class="img-container">
-                        <img class="img-responsive" src="/assets/images/ridita.gif">
+                        <img class="img-responsive" src="/assets/images/sudipto.jpg">
                     </div>
-                    <div class="mc-description">
-                        He has appeared in more than 100 films and television shows, including The Deer Hunter, Annie Hall, The Prophecy trilogy, The Dogs of War ...
-                    </div>
-                </div>
-                <a class="mc-btn-action">
-                    <i class="fa fa-bars"></i>
-                </a>
-                <div class="mc-footer">
-                    <h4>
-                        Social
-                    </h4>
-                    <a class="fa fa-fw fa-facebook"></a>
-                    <a class="fa fa-fw fa-twitter"></a>
-                    <a class="fa fa-fw fa-linkedin"></a>
-                    <a class="fa fa-fw fa-google-plus"></a>
-                </div>
             </article>
         </div>
         </div>
-        <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="col-md-5 col-sm-6 col-xs-12" >
             <div class="coordinator"><article class="material-card Pink">
                 <h2>
                     <span>Rajyalakshmi Ma'am</span>
@@ -621,27 +615,13 @@ window.onload = function() {
                 </h2>
                 <div class="mc-content">
                     <div class="img-container">
-                        <img class="img-responsive" src="/assets/images/nidish.gif">
+                        <img class="img-responsive" src="/assets/images/nidish.jpg">
                     </div>
-                    <div class="mc-description">
-                        He has won two Academy Awards, for his roles in the mystery drama Mystic River (2003) and the biopic Milk (2008). Penn began his acting career in television with a brief appearance in a 1974 episode of Little House on the Prairie ...
-                    </div>
-                </div>
-                <a class="mc-btn-action">
-                    <i class="fa fa-bars"></i>
-                </a>
-                <div class="mc-footer">
-                    <h4>
-                        Social
-                    </h4>
-                    <a class="fa fa-fw fa-facebook"></a>
-                    <a class="fa fa-fw fa-twitter"></a>
-                    <a class="fa fa-fw fa-linkedin"></a>
-                    <a class="fa fa-fw fa-google-plus"></a>
-                </div>
             </article>
         </div>
     </div>
+    </div>
+    <div class="row active-with-click">
         <div class="col-md-4 col-sm-6 col-xs-12">
             <article class="material-card Red">
                 <h2>
@@ -655,22 +635,6 @@ window.onload = function() {
                     <div class="img-container">
                         <img class="img-responsive" src="/assets/images/aditya-bhaiya.gif">
                     </div>
-                    <div class="mc-description">
-                        He has appeared in more than 100 films and television shows, including The Deer Hunter, Annie Hall, The Prophecy trilogy, The Dogs of War ...
-                    </div>
-                </div>
-                <a class="mc-btn-action">
-                    <i class="fa fa-bars"></i>
-                </a>
-                <div class="mc-footer">
-                    <h4>
-                        Social
-                    </h4>
-                    <a class="fa fa-fw fa-facebook"></a>
-                    <a class="fa fa-fw fa-twitter"></a>
-                    <a class="fa fa-fw fa-linkedin"></a>
-                    <a class="fa fa-fw fa-google-plus"></a>
-                </div>
             </article>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12">
@@ -686,22 +650,6 @@ window.onload = function() {
                     <div class="img-container">
                         <img class="img-responsive" src="/assets/images/ananya.gif">
                     </div>
-                    <div class="mc-description">
-                        He has won two Academy Awards, for his roles in the mystery drama Mystic River (2003) and the biopic Milk (2008). Penn began his acting career in television with a brief appearance in a 1974 episode of Little House on the Prairie ...
-                    </div>
-                </div>
-                <a class="mc-btn-action">
-                    <i class="fa fa-bars"></i>
-                </a>
-                <div class="mc-footer">
-                    <h4>
-                        Social
-                    </h4>
-                    <a class="fa fa-fw fa-facebook"></a>
-                    <a class="fa fa-fw fa-twitter"></a>
-                    <a class="fa fa-fw fa-linkedin"></a>
-                    <a class="fa fa-fw fa-google-plus"></a>
-                </div>
             </article>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12">
@@ -717,22 +665,6 @@ window.onload = function() {
                     <div class="img-container">
                         <img class="img-responsive" src="/assets/images/moushik.gif">
                     </div>
-                    <div class="mc-description">
-                        He rose to international fame with his role as the Man with No Name in Sergio Leone's Dollars trilogy of spaghetti Westerns during the 1960s ...
-                    </div>
-                </div>
-                <a class="mc-btn-action">
-                    <i class="fa fa-bars"></i>
-                </a>
-                <div class="mc-footer">
-                    <h4>
-                        Social
-                    </h4>
-                    <a class="fa fa-fw fa-facebook"></a>
-                    <a class="fa fa-fw fa-twitter"></a>
-                    <a class="fa fa-fw fa-linkedin"></a>
-                    <a class="fa fa-fw fa-google-plus"></a>
-                </div>
             </article>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12">
@@ -748,22 +680,6 @@ window.onload = function() {
                     <div class="img-container">
                         <img class="img-responsive" src="/assets/images/shreya.gif">
                     </div>
-                    <div class="mc-description">
-                        He has been known for his versatile portrayals of antiheroes and vulnerable characters.[3] He won the Academy Award for Kramer vs. Kramer in 1979 ...
-                    </div>
-                </div>
-                <a class="mc-btn-action">
-                    <i class="fa fa-bars"></i>
-                </a>
-                <div class="mc-footer">
-                    <h4>
-                        Social
-                    </h4>
-                    <a class="fa fa-fw fa-facebook"></a>
-                    <a class="fa fa-fw fa-twitter"></a>
-                    <a class="fa fa-fw fa-linkedin"></a>
-                    <a class="fa fa-fw fa-google-plus"></a>
-                </div>
             </article>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12">
@@ -779,22 +695,6 @@ window.onload = function() {
                     <div class="img-container">
                         <img class="img-responsive" src="/assets/images/alan.gif">
                     </div>
-                    <div class="mc-description">
-                        He has been nominated for three Academy Awards for his work in the films Primal Fear, American History X and Birdman. He also starred in other roles ...
-                    </div>
-                </div>
-                <a class="mc-btn-action">
-                    <i class="fa fa-bars"></i>
-                </a>
-                <div class="mc-footer">
-                    <h4>
-                        Social
-                    </h4>
-                    <a class="fa fa-fw fa-facebook"></a>
-                    <a class="fa fa-fw fa-twitter"></a>
-                    <a class="fa fa-fw fa-linkedin"></a>
-                    <a class="fa fa-fw fa-google-plus"></a>
-                </div>
             </article>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12">
@@ -810,22 +710,6 @@ window.onload = function() {
                     <div class="img-container">
                         <img class="img-responsive" src="assets/images/chaitanya.gif">
                     </div>
-                    <div class="mc-description">
-                        English actor and author. Renowned for his distinctive working class cockney accent, Caine has appeared in over 115 films and is regarded as a British ...
-                    </div>
-                </div>
-                <a class="mc-btn-action">
-                    <i class="fa fa-bars"></i>
-                </a>
-                <div class="mc-footer">
-                    <h4>
-                        Social
-                    </h4>
-                    <a class="fa fa-fw fa-facebook"></a>
-                    <a class="fa fa-fw fa-twitter"></a>
-                    <a class="fa fa-fw fa-linkedin"></a>
-                    <a class="fa fa-fw fa-google-plus"></a>
-                </div>
             </article>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12">
@@ -839,24 +723,8 @@ window.onload = function() {
                 </h2>
                 <div class="mc-content">
                     <div class="img-container">
-                        <img class="img-responsive" src="/assets/images/rahul.gif">
+                        <img class="img-responsive" src="/assets/images/rahul.jpg">
                     </div>
-                    <div class="mc-description">
-                        Some of his most notable starring roles were in Martin Scorsese's Mean Streets and Taxi Driver, Ridley Scott's The Duellists and Thelma & Louise, Quentin Tarantino ...
-                    </div>
-                </div>
-                <a class="mc-btn-action">
-                    <i class="fa fa-bars"></i>
-                </a>
-                <div class="mc-footer">
-                    <h4>
-                        Social
-                    </h4>
-                    <a class="fa fa-fw fa-facebook"></a>
-                    <a class="fa fa-fw fa-twitter"></a>
-                    <a class="fa fa-fw fa-linkedin"></a>
-                    <a class="fa fa-fw fa-google-plus"></a>
-                </div>
             </article>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12">
@@ -872,22 +740,6 @@ window.onload = function() {
                     <div class="img-container">
                         <img class="img-responsive" src="assets/images/ishaan.gif">
                     </div>
-                    <div class="mc-description">
-                        Throughout his career, Nicholson has portrayed unique and challenging roles, many of which include dark portrayals of excitable, neurotic and psychopathic characters ...
-                    </div>
-                </div>
-                <a class="mc-btn-action">
-                    <i class="fa fa-bars"></i>
-                </a>
-                <div class="mc-footer">
-                    <h4>
-                        Social
-                    </h4>
-                    <a class="fa fa-fw fa-facebook"></a>
-                    <a class="fa fa-fw fa-twitter"></a>
-                    <a class="fa fa-fw fa-linkedin"></a>
-                    <a class="fa fa-fw fa-google-plus"></a>
-                </div>
             </article>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12">
@@ -903,22 +755,6 @@ window.onload = function() {
                     <div class="img-container">
                         <img class="img-responsive" src="/assets/images/suraj.gif">
                     </div>
-                    <div class="mc-description">
-                        He comes from a well-known acting family and began his televised acting in 1958 as a child with his father, Lloyd Bridges, and brother, Beau, on television's Sea Hunt ...
-                    </div>
-                </div>
-                <a class="mc-btn-action">
-                    <i class="fa fa-bars"></i>
-                </a>
-                <div class="mc-footer">
-                    <h4>
-                        Social
-                    </h4>
-                    <a class="fa fa-fw fa-facebook"></a>
-                    <a class="fa fa-fw fa-twitter"></a>
-                    <a class="fa fa-fw fa-linkedin"></a>
-                    <a class="fa fa-fw fa-google-plus"></a>
-                </div>
             </article>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12">
@@ -932,24 +768,8 @@ window.onload = function() {
                 </h2>
                 <div class="mc-content">
                     <div class="img-container">
-                        <img class="img-responsive" src="assets/images/bhaiya.gif">
+                        <img class="img-responsive" src="assets/images/abhirup.jpg">
                     </div>
-                    <div class="mc-description">
-                        He is known for his roles in Big (1988), Philadelphia (1993), Forrest Gump (1994), Apollo 13 (1995), Saving Private Ryan, You've Got Mail (both 1998), The Green Mile (1999), Cast Away (2000) ...
-                    </div>
-                </div>
-                <a class="mc-btn-action">
-                    <i class="fa fa-bars"></i>
-                </a>
-                <div class="mc-footer">
-                    <h4>
-                        Social
-                    </h4>
-                    <a class="fa fa-fw fa-facebook"></a>
-                    <a class="fa fa-fw fa-twitter"></a>
-                    <a class="fa fa-fw fa-linkedin"></a>
-                    <a class="fa fa-fw fa-google-plus"></a>
-                </div>
             </article>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12">
@@ -963,24 +783,8 @@ window.onload = function() {
                 </h2>
                 <div class="mc-content">
                     <div class="img-container">
-                        <img class="img-responsive" src="assets/images/ridita.gif">
+                        <img class="img-responsive" src="assets/images/ridita.jpg">
                     </div>
-                    <div class="mc-description">
-                        He is known for his roles in Big (1988), Philadelphia (1993), Forrest Gump (1994), Apollo 13 (1995), Saving Private Ryan, You've Got Mail (both 1998), The Green Mile (1999), Cast Away (2000) ...
-                    </div>
-                </div>
-                <a class="mc-btn-action">
-                    <i class="fa fa-bars"></i>
-                </a>
-                <div class="mc-footer">
-                    <h4>
-                        Social
-                    </h4>
-                    <a class="fa fa-fw fa-facebook"></a>
-                    <a class="fa fa-fw fa-twitter"></a>
-                    <a class="fa fa-fw fa-linkedin"></a>
-                    <a class="fa fa-fw fa-google-plus"></a>
-                </div>
             </article>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12">
@@ -994,24 +798,8 @@ window.onload = function() {
                 </h2>
                 <div class="mc-content">
                     <div class="img-container">
-                        <img class="img-responsive" src="assets/images/nidish.gif">
+                        <img class="img-responsive" src="assets/images/nidish.jpg">
                     </div>
-                    <div class="mc-description">
-                        Best known for his distinctive supporting and character roles – typically lowlifes, bullies, and misfits – Hoffman was a regular presence in films from the early 1990s until his death at age 46.
-                    </div>
-                </div>
-                <a class="mc-btn-action">
-                    <i class="fa fa-bars"></i>
-                </a>
-                <div class="mc-footer">
-                    <h4>
-                        Social
-                    </h4>
-                    <a class="fa fa-fw fa-facebook"></a>
-                    <a class="fa fa-fw fa-twitter"></a>
-                    <a class="fa fa-fw fa-linkedin"></a>
-                    <a class="fa fa-fw fa-google-plus"></a>
-                </div>
             </article>
         </div>
 
